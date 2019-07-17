@@ -1,0 +1,11 @@
+<!--pages/list/list.wxml-->
+<view class='container'>
+  <view class='box'>
+    <view class='left' wx:if="{{contentList.length}}">
+      <list contentList="{{contentList}}" class="listComponent" currentKey="{{currentKey}}" bind:ChangeId="changeId"></list>
+    </view>
+  </view>
+  <view class='right'>
+    <title wx:for="{{titleList}}" wx:key="{{index}}" title="{{item}}" class="{{titleIndex===index?'titleActive':''}}" index="{{index}}" bind:ChangeId="changeId" bind:Changekey='changekey'></title>
+  </view>
+</view>

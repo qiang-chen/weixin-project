@@ -1,0 +1,6 @@
+/* components/title/title.wxss */
+.everyNav{
+  width: 100%;
+  height:26px;
+  line-height: 26px;
+}

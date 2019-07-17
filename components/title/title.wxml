@@ -1,0 +1,8 @@
+<!--components/title/title.wxml-->
+<view 
+data-id="{{index}}"
+data-key="{{title}}"
+class='everyNav' 
+bind:tap='changeId'>
+  <text>{{title}}</text>
+</view>

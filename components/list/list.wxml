@@ -1,0 +1,17 @@
+<!--components/list/list.wxml-->
+<scroll-view
+  scroll-y 
+  scroll-into-view="{{currentKey}}" 
+  scroll-with-animation 
+  bindscroll="handleScroll"
+  class='scroll'
+>
+  <view wx:for="{{contentList}}" wx:key="{{index}}" id="{{item.key}}" class='content'>
+    <text class='title'>{{item.key}}</text>
+
+    <view class='item' wx:for="{{item.row}}" wx:key="{{index}}">
+      <image src='{{item.img}}' class='img'></image>
+      <text class='item-text'>{{item.name}}</text>
+    </view>
+  </view>
+</scroll-view>
