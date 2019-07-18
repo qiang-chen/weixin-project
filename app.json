@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/movie/movie",
     "pages/list/list",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/my/my",
     "pages/movieDetail/movieDetail"
@@ -21,7 +21,7 @@
     "position": "bottom",
     "list": [
       {
-        "text": "首页",
+        "text": "天气预报",
         "selectedIconPath": "./static/index-active.png",
         "iconPath": "./static/index.png",
         "pagePath": "pages/index/index"

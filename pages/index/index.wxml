@@ -1,13 +1,38 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <!-- 区域1：地区选择器  通过mode可以获取到选择器的一些类型 -->
+  <picker mode='region' bindchange='regionChange'>
+    <view>{{region}}</view>
+  </picker>
+   <!-- 区域2：单行文本显示温度和天气 -->
+  <text>{{now.tmp}}°C {{now.cond_txt}}</text>
+
+  <!-- 区域3：天气图标 -->
+  <image src='/images/weather_icon/{{now.cond_code}}.png' mode='widthFix'></image>
+
+  <!-- 区域4：多行天气信息 -->
+  <view class='detail'>
+    <view class='bar'>
+      <view class='box'>湿度</view>
+      <view class='box'>气压</view>
+      <view class='box'>能见度</view>
+    </view>
+    <view class='bar'>
+      <view class='box'>{{now.hum}} %</view>
+      <view class='box'>{{now.pres}} hPa</view>
+      <view class='box'>{{now.vis}} km</view>
+    </view>
+    <view class='bar'>
+      <view class='box'>风向</view>
+      <view class='box'>风速</view>
+      <view class='box'>风力</view>
+    </view>
+    <view class='bar'>
+      <view class='box'>{{now.wind_dir}}</view>
+      <view class='box'>{{now.wind_spd}} km/h</view>
+      <view class='box'>{{now.wind_sc}} 级</view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+
+  
 </view>

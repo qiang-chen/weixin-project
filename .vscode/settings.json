@@ -1,0 +1,5 @@
+{
+    "editor.codeActionsOnSaveTimeout": 2750,
+    "editor.formatOnSaveTimeout": 2750,
+    "files.autoSaveDelay": 2000
+}
