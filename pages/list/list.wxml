@@ -1,5 +1,6 @@
 <!--pages/list/list.wxml-->
 <view class='container'>
+
   <view class='box'>
     <view class='left' wx:if="{{contentList.length}}">
       <list contentList="{{contentList}}" class="listComponent" currentKey="{{currentKey}}" bind:ChangeId="changeId"></list>

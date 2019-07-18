@@ -1,0 +1,6 @@
+/* pages/cart/cart.wxss */
+
+  .scroll{
+    
+    height: 100%;
+  }

@@ -1,0 +1,2 @@
+/* pages/movieDetail/movieDetail.wxss */
+@import "../wxParse/wxParse/wxParse";

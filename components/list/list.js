@@ -68,11 +68,10 @@ Component({
       this.data.saveTitle.forEach((item, index) => {
         //console.log(event)
         let elTop = event.detail.scrollTop;
-        if (elTop >= item) {
+        if (elTop >= item&&elTop<this.data.saveTitle[index+1]) {
           console.log(index)
           this.triggerEvent('ChangeId', {
-            id: index,
-            key: "A"
+            id: index
           })
         }
       })

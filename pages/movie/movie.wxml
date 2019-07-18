@@ -1,0 +1,6 @@
+<scroll-view class="scroll" scroll-y="true" scroll-with-animation="true" 
+ bindscrolltolower="scrollBottom">
+  <view wx:if="{{movieList.length}}">
+  <movie movieList="{{movieList}}"></movie>
+</view>
+</scroll-view>

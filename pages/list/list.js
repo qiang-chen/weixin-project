@@ -16,7 +16,7 @@ Page({
     //顺便改变key值利用scroll-view这个标签从而进行一些切换
     let { id } = e.detail;
     //console.log(key)
-    console.log(id,"===========")
+    //console.log(id,"===========")
     this.setData({
       titleIndex:id
     })
@@ -56,7 +56,7 @@ Page({
             titleList:arr,
             contentList:data
           })
-          console.log(this.data.contentList)
+          //console.log(this.data.contentList)
         },
         fail: function(res) {},
         complete: function(res) {},

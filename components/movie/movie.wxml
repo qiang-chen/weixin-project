@@ -1,0 +1,26 @@
+
+
+  <view wx:for="{{movieList}}" wx:key="{{item.id}}" class='list'>
+    <view class='left'>
+      <image src="{{item.img}}" class='img' />
+    </view>
+    <view class='info'>
+      <view class='title'>
+        <text class="shang">上映时间:</text>
+        <text class='time'>{{item.comingTitle}}</text>
+      </view>
+      <view>
+        <text class='name' class='nm'>{{item.nm}}</text>
+      </view>
+      <view class='sum'>
+        <text>观看人数:{{item.wish}}人</text>
+      </view>
+      <view class='detail'>
+        <text 
+        data-id='{{item.id}}'
+        bind:tap='detail'
+        >更多精彩请点击这里</text>
+      </view>
+    </view>
+
+  </view>

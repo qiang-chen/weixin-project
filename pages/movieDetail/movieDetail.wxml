@@ -1,0 +1,5 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+
+<import src="../wxParse/wxParse/wxParse.wxml"/>
+
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>

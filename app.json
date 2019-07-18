@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/movie/movie",
     "pages/list/list",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/cart/cart",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/movieDetail/movieDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,10 +33,10 @@
         "pagePath": "pages/list/list"
       },
       {
-        "text": "购物车",
+        "text": "电影",
         "selectedIconPath": "./static/cart-active.png",
         "iconPath": "./static/cart.png",
-        "pagePath": "pages/cart/cart"
+        "pagePath": "pages/movie/movie"
       },
       {
         "text": "我的",
